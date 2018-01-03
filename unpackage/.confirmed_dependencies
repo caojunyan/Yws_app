@@ -1,0 +1,150 @@
+{
+  "index.html": {
+    "resources": [
+      "images/zhuye_48.png",
+      "selfJS/index.js",
+      "images/zhuye_17.png",
+      "selfCss/index.css",
+      "selfCss/footer.css",
+      "pluginJS/layer/skin/default/layer.css",
+      "images/zhuye_03.png",
+      "images/zhuye_10.png",
+      "pluginJS/layer/skin/default/loading-1.gif",
+      "pluginJS/layer/layer.js",
+      "pluginJS/json2.js",
+      "images/zhuye_44.png",
+      "images/pai_03.png",
+      "images/zhuye_46.png",
+      "pluginJS/liquidFill.js",
+      "pluginJS/jquery-1.11.3.js",
+      "images/zhuye_15.png",
+      "selfCss/cssReset.css",
+      "images/zhuye2_42.png",
+      "pluginJS/echarts.js",
+      "images/zhuye_22.png",
+      "statForm.html",
+      "MeterRead.html",
+      "login.html",
+      "waterData.html",
+      "pluginJS/layer/mobile/need/layer.css",
+      "warning.html"
+    ],
+    "refer": []
+  },
+  "statForm.html": {
+    "resources": [
+      "images/zhuye2_44.png",
+      "pluginCss/DatePickerYN.css",
+      "images/zhuye_42.png",
+      "pluginJS/jquery-ui.js",
+      "selfJS/statForm.js",
+      "selfCss/footer.css",
+      "selfCss/statForm.css",
+      "pluginJS/layer/skin/default/layer.css",
+      "selfCss/cssReset.css",
+      "images/fenxi_07.png",
+      "MeterRead.html",
+      "index.html",
+      "pluginJS/layer/mobile/need/layer.css"
+    ],
+    "refer": []
+  },
+  "login.html": {
+    "resources": [
+      "pluginJS/json2.js",
+      "pluginJS/vector.js",
+      "selfJS/login.js",
+      "images/logo.png",
+      "pluginJS/jquery-1.11.3.js",
+      "pluginJS/layer/skin/default/layer.css",
+      "selfCss/cssReset.css",
+      "pluginJS/layer/layer.js",
+      "selfCss/login.css",
+      "pluginJS/layer/skin/default/loading-1.gif",
+      "index.html",
+      "selfJS/public.js",
+      "pluginJS/layer/mobile/layer.js",
+      "pluginJS/layer/mobile/need/layer.css"
+    ],
+    "refer": []
+  },
+  "MeterRead.html": {
+    "resources": [
+      "images/zhuye2_46.png",
+      "selfJS/MeterRead.js",
+      "images/zhuye_42.png",
+      "selfCss/MeterRead.css",
+      "images/fenxi_16.png",
+      "search.html",
+      "images/zhuye_48.png",
+      "images/zhuye_44.png",
+      "images/zhuye_46.png",
+      "pluginJS/liquidFill.js",
+      "selfCss/footer.css",
+      "pluginJS/layer/skin/default/layer.css",
+      "pluginJS/echarts.js",
+      "pluginJS/layer/skin/default/loading-1.gif",
+      "warning.html",
+      "statForm.html",
+      "pluginJS/layer/mobile/need/layer.css"
+    ],
+    "refer": []
+  },
+  "search.html": {
+    "resources": [
+      "images/back.png",
+      "images/yibiao.png",
+      "selfCss/search.css",
+      "pluginJS/layer/skin/default/layer.css",
+      "images/lanquan.png",
+      "images/search.png",
+      "selfJS/search.js",
+      "MeterRead.html"
+    ],
+    "refer": []
+  },
+  "waterData.html": {
+    "resources": [
+      "images/quxian_03.png",
+      "images/back.png",
+      "pluginCss/slide.css",
+      "images/shuju_03.png",
+      "selfJS/waterData.js",
+      "images/shuju_14.png",
+      "pluginJS/jquery.event.drag-1.5.min.js",
+      "images/shuju_12.png",
+      "images/shuju_08.png",
+      "images/lanquan.png",
+      "pluginJS/jquery.touchSlider.js",
+      "selfCss/waterData.css",
+      "images/hover_right.png",
+      "images/hover_left.png",
+      "index.html",
+      "pluginJS/layer/skin/default/layer.css",
+      "pluginJS/layer/layer.js"
+    ],
+    "refer": []
+  },
+  "warning.html": {
+    "resources": [
+      "images/quxian_03.png",
+      "pluginCss/DatePickerYN.css",
+      "pluginJS/jquery-ui.js",
+      "images/zhuye2_48.png",
+      "images/warning_07.png",
+      "selfJS/warning.js",
+      "images/warning_03.png",
+      "pluginJS/layer/skin/default/layer.css",
+      "images/zhuye_22.png",
+      "images/warning_10.png",
+      "selfCss/warning.css",
+      "images/right_03.png",
+      "statForm.html",
+      "MeterRead.html",
+      "selfCss/footer.css",
+      "pluginJS/layer/mobile/need/layer.css",
+      "index.html"
+    ],
+    "refer": []
+  }
+}

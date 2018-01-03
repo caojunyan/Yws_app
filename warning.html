@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="pluginCss/DatePickerYN.css">
+    <link rel="stylesheet" href="selfCss/cssReset.css">
+    <link rel="stylesheet" href="selfCss/warning.css">
+    <link rel="stylesheet" href="selfCss/footer.css">
+</head>
+<body>
+    <!--标题-->
+    <div id="header">
+        <h3 class="text-center">
+            异常报警
+        </h3>
+    </div>
+    <!--主体-->
+    <div id="main">
+            <div class="main-warning">
+                <div class="flex warning-sta">
+                    <div class="warning-add">
+                        <div>
+                            <p class="pbg1 lf"></p>
+                            <div>
+                                <p>今日报警</p>
+                                <h3 id="todayWarning">3</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="warning-add">
+                        <div>
+                            <p class="pbg2 lf"></p>
+                            <div>
+                                <p>7天累计报警</p>
+                                <h3 id="sevenWarning">34</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="warning-search">
+                    <div name="" id="classify">
+                        <span>分类</span>
+                        <img src="images/fenxi_16.png" alt="" data-toggle="0" id="putDown">
+                        <ul class="hide">
+                            <li>分类分类</li>
+                            <li>分类分类</li>
+                            <li>分类分类</li>
+                            <li>分类分类</li>
+                            <li>分类分类</li>
+                            <li>分类分类</li>
+                        </ul>
+                    </div>
+                    |
+                    <div id="calendar" class="rf">
+                        <img src="images/warning_07.png" alt="">
+                        &nbsp;
+                        <input type="text"  class="YN_TIME" id="timeSta">
+                        -&nbsp;
+                        <input type="text"  class="YN_TIME" id="timeEnd">
+                        <img src="images/warning_10.png" alt="" id="search">
+                    </div>
+                </div>
+
+            </div>
+            <div class="warning-list" id="warning-list">
+                <ul>
+                    <li class="text-center black">
+
+                        <h3>
+                            请查询
+                        </h3>
+
+                        
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+    </div>
+
+    <!--//模态框-->
+    <div class="modal">
+        <div class="modal-main">
+            <div class="modal-title">
+                <img src="images/quxian_03.png" alt="" class="rf close">
+                <h3>
+                    报警详情
+                </h3>
+
+            </div>
+            <div class="modal-body-self">
+                <ul>
+                    <li class="flex">
+                        <span>
+                            报警地点
+                        </span>
+                        <p id="alarmAddr">
+                            请查询
+                        </p>
+                    </li>
+
+                    <li class="flex">
+                        <span>
+                            报警项目
+                        </span>
+                        <p id="alarmProject">
+                            请查询
+                        </p>
+                    </li>
+                    <li class="flex">
+                        <span>
+                            报警原因
+                        </span>
+                        <p id="warningReason">
+                            请查询
+                        </p>
+                    </li>
+                    <li class="flex">
+                        <span>
+                            实际值
+                        </span>
+                        <p id="actualVal">
+                            请查询
+                        </p>
+                    </li>
+                    <li class="flex">
+                        <span>
+                            参考值
+                        </span>
+                        <p id="referenceVal">
+                            请查询
+                        </p>
+                    </li>
+                    <li class="flex">
+                        <span>
+                            最后发生时间
+                        </span>
+                        <p id="lastHappenTime">
+                            请查询
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-button">
+                <button class="close">
+                    确 认
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <ul class="flex">
+            <li data-toggle="index.html">
+                <p>
+                    <img src="images/zhuye_42.png" alt="实时数据">
+                </p>
+                <div>
+                    实时数据
+                </div>
+            </li>
+            <li data-toggle="statForm.html">
+                <p>
+                    <img src="images/zhuye_44.png" alt="统计报表">
+                </p>
+                <div>
+                    统计报表
+                </div>
+            </li>
+            <li data-toggle="MeterRead.html">
+                <p>
+                    <img src="images/zhuye_46.png" alt="抄表数据">
+                </p>
+                <div>
+                    抄表数据
+                </div>
+            </li>
+            <li data-toggle="warning.html"  class="blue">
+                <p>
+                    <img src="images/zhuye2_48.png" alt="异常报警">
+                </p>
+                <div>
+                    异常报警
+                </div>
+            </li>
+        </ul>
+    </div>
+<script src="pluginJS/jquery-1.11.3.js"></script>
+    <script src="pluginJS/jquery-ui.js"></script>
+    <script src="pluginJS/layer/mobile/layer.js"></script>
+<script src="selfJS/warning.js"></script>
+    <script src="selfJS/public.js"></script>
+</body>
+</html>

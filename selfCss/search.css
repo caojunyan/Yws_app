@@ -1,0 +1,128 @@
+#zzc {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 666666;
+  background: rgba(36, 44, 66, 0.7);
+}
+#zzc #header {
+  margin: 1em 0;
+  padding: 0 2em 0 1em;
+}
+#zzc #header img {
+  width: .8em;
+}
+#zzc #readData {
+  position: relative;
+  margin: 4em 0;
+}
+#zzc #readData #singleCopy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  z-index: 10;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#zzc #readData .blueCircle {
+  position: absolute;
+  left: 50%;
+  top: -0.5em;
+  transform: translateX(-50%);
+}
+#zzc #readData .blueCircle .bluePointer {
+  transform-origin: left center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotate(180deg);
+}
+#zzc #readData .blueCircle .bluePointer div {
+  width: 3em;
+  height: 4px;
+  border-radius: 3px;
+  background: #0D82B4;
+}
+#zzc #readData .blueCircle .bluePointer .rotateHalf {
+  transform-origin: left center;
+  animation: scroll 2s infinite linear;
+  animation-fill-mode: forwards;
+}
+#zzc #readData .blueCircle img {
+  width: 10em;
+  animation: gogogo 5s infinite linear ;
+}
+#zzc #readData h3 {
+  font-size: 1.1em;
+  margin-top: 1em;
+}
+#zzc #readData .cPanel {
+  width: 9em;
+  height: 9em;
+}
+#zzc .userNum {
+  padding: 0 4em;
+}
+#zzc .userNum .userNump {
+  width: 100%;
+  background: #171E31;
+  padding: .5em;
+  border-radius: 2em;
+  font-size: 1em;
+}
+#zzc .userNum .userNump #userNum {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+}
+#zzc .userNum button {
+  margin-top: 1em;
+  width: 100%;
+  background: #00BBFE;
+  font-size: 1.3em;
+  color: #fff;
+  border-radius: 2em;
+  padding: .3em;
+  border: none;
+  outline: none;
+  font-weight: 500;
+}
+@keyframes gogogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(150deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,178 @@
+#header{
+  margin:1em 0;
+
+
+}
+#main{
+  margin-bottom: 5.5em;
+
+  .main-title{
+    padding:1em .6em;
+    background: #22344D;
+
+  .prev-day{
+      margin-top:.2em;
+      font-size: .8em;
+      p{
+        width:0;
+        height:0;
+        border:7px solid transparent;
+        border-right-color: #fff;
+      }
+      span{
+        margin-left: 1.5em;
+      }
+    }
+    .next-day{
+      margin-top:.2em;
+      font-size: .8em;
+      p{
+        width:0;
+        height:0;
+        border:7px solid transparent;
+        border-left-color: #fff;
+      }
+      span{
+        margin-right: .36em;
+      }
+    }
+  //  前一天后一天的切换
+    .next-readonly{
+      margin-top:.2em;
+      color: #808082;
+      p{
+        border-left-color: #808082;
+      }
+    }
+    .prev-readonly{
+      margin-top:.2em;
+      color: #808082;
+      p{
+        border-left-color: #808082;
+      }
+    }
+
+    //日历
+    .calendar{
+      #timeDate{
+        width: 5.5em!important;
+        background: transparent;
+        outline: none;
+        border: none;
+        color: #fff;
+        font-size: 1.1em;
+      }
+      img:first-child{
+        margin-bottom: -.2em;
+      }
+      span{
+        font-size: 1.1em;
+        font-weight: 500;
+     }
+      b{
+        font-size: 1.1em;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .main-body{
+    padding: 0 2.5em;
+    p{
+      margin:1em 0;
+    }
+    ul{
+      li{
+        margin-bottom: 1em;
+        background: #192032;
+        height:2em;
+        line-height: 2em;
+        border-radius: 2em;
+        overflow: hidden;
+        span:first-child{
+          margin-left: 1em;
+        }
+        span.rf{
+          margin-right:1em;
+        }
+        //渐变的背景
+        div{
+          width:80%;
+          height:100%;
+          transition: width .6s linear;
+
+        }
+
+      }
+    }
+  }
+}
+
+@keyframes load {
+  0%{
+    width:0;
+  }
+
+  100%{
+    width:50%;
+  }
+}
+
+//渐变的背景
+//总之水量
+.produceGra{
+  background: rgb(55,203,236);
+  background:-webkit-gradient(linear, 0 0, right bottom, from(#04A8EB), to(rgb(74,216,236)));
+}
+//污水
+.sewageGra{
+  background: rgb(99,105,249);
+  background:-webkit-gradient(linear, 0 0, right bottom, from(#B346FF), to(rgb(68,120,248)));
+}
+//耗电
+.consumptionGra{
+  background: rgb(59,127,214);
+  background:-webkit-gradient(linear, 0 0, right bottom, from(#2D5EC4), to(rgb(83,183,246)));
+}
+//压力
+.pressureGra{
+  background: rgb(131,229,146);
+  background:-webkit-gradient(linear, 0 0, right bottom, from(#48BD5C), to(rgb(131,229,146)));
+}
+//抄回
+.copyGra{
+  background: rgb(250,154,15);
+  background:-webkit-gradient(linear, 0 0, right bottom, from(#FA9A0F), to(rgb(239,202,0)));
+}
+//用水量
+.useWaterGra{
+  background: rgb(255,128,125);
+  background:-webkit-gradient(linear, 0 0, right bottom, from(#F34878), to(rgb(255,128,125)));
+}
+//药耗
+.medicineGra{
+  background: rgb(176,103,255);
+  background:-webkit-gradient(linear, 0 0, right bottom, from(#2BA7C8), to(rgb(176,103,255)));
+}
+
+
+
+
+//媒体查询{苹果6
+
+@media screen and (max-width: 375px){
+
+  body{
+    font-size: 13px;
+  }
+
+}
+//媒体查询{苹果5
+
+@media screen and (max-width: 320px){
+
+  body{
+    font-size: 10px;
+  }
+
+}

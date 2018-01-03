@@ -1,0 +1,128 @@
+#header {
+  margin: 1em 0;
+}
+#main {
+  position: relative;
+}
+#main .main_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#main .main_1 .welcome {
+  padding: 0 2em;
+  margin-top: 3em;
+}
+#main .main_1 .welcome .quality {
+  width: 4em;
+  height: 4em;
+  border-radius: 3px;
+  background: #1E2538;
+  padding: 5px;
+}
+#main .main_1 .welcome .quality .yellowLine {
+  border-bottom: 2px solid #FFAD00;
+}
+#main .main_1 .welcome img {
+  width: 1.5em;
+  vertical-align: middle;
+}
+#main .main_1 .dataScreening {
+  margin-top: 9.6em;
+  padding: 0 2.6em 1em;
+}
+#main .main_1 .dataScreening .pLeft {
+  padding-left: 1em;
+}
+#main .main_1 .dataScreening li {
+  width: 50%;
+  margin-bottom: 1.6em;
+}
+#main .main_1 .dataScreening li > p {
+  width: 2em;
+  height: 2em;
+  margin-top: .3em;
+}
+#main .main_1 .dataScreening li > p img {
+  width: 100%;
+}
+#main .main_1 .dataScreening li > div {
+  padding-left: .3em;
+}
+#main .main_1 .dataScreening li div > p:first-child {
+  margin-bottom: .1em;
+  font-size: 1.4em;
+}
+#main .main_1 .dataScreening li div > p:last-child {
+  color: #566F8C;
+}
+#main .main_2 {
+  background: #fff;
+  padding: .6em;
+  border-top: 3px solid #8787FB;
+}
+#main .main_2 .waterData .data-title .virgule {
+  margin-right: .8em;
+  height: 100%;
+  width: 4px;
+  border-radius: 6px;
+  background: #00BDFD;
+}
+#main .main_2 .waterData .data-body > ul > li {
+  width: 32%;
+  border-radius: 5px;
+  padding: .8em;
+  margin-top: .6em;
+}
+#main .main_2 .waterData .data-body > ul > li > div {
+  padding: .3em 0 .3em .4em;
+  border-bottom: 2px dashed #fff;
+}
+#main .main_2 .waterData .data-body > ul > li ul {
+  padding: .2em  0;
+  font-size: .8em;
+}
+#main .main_2 .waterData .data-body > ul > li ul li {
+  margin-top: .3em;
+}
+#main .main_2 .waterData:last-child {
+  margin-bottom: 4em;
+}
+.p1 {
+  background: url("../images/zhuye_15.png") no-repeat;
+  background-size: 100%;
+}
+.p2 {
+  background: url("../images/zhuye_17.png") no-repeat;
+  background-size: 100%;
+}
+.p3 {
+  background: url("../images/pai_03.png") no-repeat;
+  background-size: 100%;
+}
+.p4 {
+  background: url("../images/zhuye_22.png") no-repeat;
+  background-size: 100%;
+}
+.blueGra {
+  background: #0098d2;
+  background: -webkit-gradient(linear, 0 0, right bottom, from(#06C3F3), to(#0098d2));
+}
+.redGra {
+  background: #d64242;
+  background: -webkit-gradient(linear, 0 0, right bottom, from(#FF9492), to(#d64242));
+}
+.grayGra {
+  background: #D7D7D7;
+  background: -webkit-gradient(linear, 0 0, right bottom, from(#ccc), to(#bcbcbc));
+}
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}

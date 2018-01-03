@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>日报统计分析</title>
+    <link rel="stylesheet" href="pluginCss/DatePickerYN.css">
+    <link rel="stylesheet" href="selfCss/cssReset.css">
+    <link rel="stylesheet" href="selfCss/statForm.css">
+    <link rel="stylesheet" href="selfCss/footer.css">
+</head>
+<body>
+    <!--标题-->
+    <div id="header">
+
+        <h3 class="text-center">
+            日报统计分析
+        </h3>
+    </div>
+    <!--主体-->
+    <div id="main">
+        <!--日历-->
+        <div class="main-title flex">
+            <div class="prev-day">
+                <span class="rf">
+                    前一天
+                </span>
+                <p></p>
+            </div>
+            <div class="calendar">
+                <!--<img src="images/fenxi_07.png" width="18" alt="日历" id="inputDate">-->
+                <span id="monthNum" class="hide">9</span>
+
+                <span class="hide" id="dayNum">3</span>
+
+                </span>
+                <input type="text" class="YN_TIME" id="timeDate">
+                <input type="hidden" id="hidYear">
+
+            </div>
+            <div class="next-day next-readonly" onclick="nextDay()">
+                <p class="rf"></p>
+                 <span>
+                    后一天
+                </span>
+
+            </div>
+        </div>
+
+        <!--数据-->
+        <div class="main-body">
+            <p>总制水量：<span id="totleProduceWater">无</span>m³</p>
+            <ul id="waterWorksAll">
+                <li>
+                    <span class="lf">
+                        西郊水厂
+                    </span>
+                    <span class="rf">
+                        0
+                    </span>
+                    <div class="produceGra" style="width:0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        柯沙水厂
+                    </span>
+                    <span class="rf">
+                        0
+                    </span>
+                    <div class="produceGra" style="width:0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        乌沙水厂
+                    </span>
+                    <span class="rf">
+                        0
+                    </span>
+                    <div class="produceGra" style="width:0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        泥凼水厂
+                    </span>
+                    <span class="rf">
+                        0
+                    </span>
+                    <div class="produceGra" style="width:0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        威舍水厂
+                    </span>
+                    <span class="rf">
+                        0
+                    </span>
+                    <div class="produceGra" style="width:0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        清水河水厂
+                    </span>
+                    <span class="rf">
+                        0
+                    </span>
+                    <div class="produceGra" style="width:0%">
+
+                    </div>
+
+                </li>
+                <li id="saJin">
+                    <span class="lf">
+                        洒金水厂
+                    </span>
+                    <span class="rf">
+                        0
+                    </span>
+                    <div class="produceGra" style="width:0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        月亮田水厂
+                    </span>
+                    <span class="rf">
+                        0
+                    </span>
+                    <div class="produceGra" style="width:0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        北郊水厂
+                    </span>
+                    <span class="rf">
+                      0
+                    </span>
+                    <div class="produceGra" style="width:0%">
+
+                    </div>
+
+                </li>
+            </ul>
+            <p>总污水处理量：<span id="sewageTreatment">无</span></p>
+            <ul id="sewageAll">
+                <li>
+                    <span class="lf">
+                        万峰新区污水处理厂
+                    </span>
+                    <span class="rf">
+                       0
+                    </span>
+                    <div class="sewageGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        桔山污水处理厂
+                    </span>
+                    <span class="rf">
+                    0
+                    </span>
+                    <div class="sewageGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        马岭污水处理厂
+                    </span>
+                    <span class="rf">
+                     0
+                    </span>
+                    <div class="sewageGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        清水河污水处理厂
+                    </span>
+                    <span class="rf">
+                   0
+                    </span>
+                    <div class="sewageGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        下午屯污水处理厂
+                    </span>
+                    <span class="rf">
+                     0
+                    </span>
+                    <div class="sewageGra" style="width:0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        威舍污水处理厂
+                    </span>
+                    <span class="rf">
+                      0
+                    </span>
+                    <div class="sewageGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        乌沙污水处理厂
+                    </span>
+                    <span class="rf">
+                     0
+                    </span>
+                    <div class="sewageGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        滴水地下污水处理厂
+                    </span>
+                    <span class="rf">
+                       0
+                    </span>
+                    <div class="sewageGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        泥凼污水处理厂
+                    </span>
+                    <span class="rf">
+                     0
+                    </span>
+                    <div class="sewageGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="lf">
+                        泥溪坝污水处理厂
+                    </span>
+                    <span class="rf">
+                    0
+                    </span>
+                    <div class="sewageGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+            </ul>
+            <p>耗电量：<span id="totlePowerOut">2344</span>KW.h</p>
+            <ul>
+                <li id="waterWorks">
+                    <span class="lf">
+                        水厂
+                    </span>
+                    <span class="rf">
+                        0
+                    </span>
+                    <div class="consumptionGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+                <li id="sewage">
+                    <span class="lf">
+                        污水厂
+                    </span>
+                    <span class="rf">
+                        0
+                    </span>
+                    <div class="consumptionGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+            </ul>
+            <p>抄回户数 <span id="copyHouseholds">0</span>户</p>
+            <ul>
+                <li id="copyGardenHousing">
+                    <span class="lf">
+                        花月小区
+                    </span>
+                    <span class="rf">
+                        0
+                    </span>
+                    <div class="copyGra" style="width: 0%">
+
+                    </div>
+
+                </li>
+
+            </ul>
+            <p>用水量 <span id="totleUseWater">0</span>m³</p>
+            <ul>
+                <li id="gerdenCommunity">
+                    <span class="lf">
+                        花月小区
+                    </span>
+                    <span class="rf">
+                       0
+                    </span>
+                    <div class="useWaterGra" style="width:0%">
+
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <ul class="flex">
+            <li data-toggle="index.html">
+                <p>
+                    <img src="images/zhuye_42.png" alt="实时数据">
+                </p>
+                <div>
+                    实时数据
+                </div>
+            </li>
+            <li data-toggle="statForm.html" class="blue">
+                <p>
+                    <img src="images/zhuye2_44.png" alt="统计报表">
+                </p>
+                <div>
+                    统计报表
+                </div>
+            </li>
+            <li data-toggle="MeterRead.html">
+                <p>
+                    <img src="images/zhuye_46.png" alt="抄表数据">
+                </p>
+                <div>
+                    抄表数据
+                </div>
+            </li>
+            <li data-toggle="warning.html">
+                <p>
+                    <img src="images/zhuye_48.png" alt="异常报警">
+                </p>
+                <div>
+                    异常报警
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="pluginJS/jquery-1.11.3.js"></script>
+    <script src="pluginJS/jquery-ui.js"></script>
+    <script src="pluginJS/layer/mobile/layer.js"></script>
+    <script src="selfJS/statForm.js"></script>
+    <script src="selfJS/public.js"></script>
+</body>
+</html>

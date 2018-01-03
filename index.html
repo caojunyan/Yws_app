@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="selfCss/cssReset.css">
+    <link rel="stylesheet" href="selfCss/footer.css">
+    <link rel="stylesheet" href="selfCss/index.css">
+
+</head>
+<body>
+    <!--标题-->
+    <div id="header">
+        <h3 class="text-center">
+            兴义智慧水务
+        </h3>
+    </div>
+        <!--主体-->
+    <div id="main">
+
+        <!--//水流背景-->
+        <div id="chart_barrel_bg" style="height:366px; overflow: hidden;z-index:-10">
+            <div id="chart_barrel" style="width:200%; height:200%"></div>
+        </div>
+        <!--//第一部分数据总览-->
+        <div class="main_1">
+            <div class="welcome flex">
+                <div class="flexRow">
+                    <div>
+                        <img src="images/zhuye_03.png" alt="头像">
+                        <span>
+                                你好，管理员
+                        </span>
+                    </div>
+                    <div class="weather">
+                        <img id="timg" src="images/zhuye_10.png" alt="天气">
+                        <span id="addrName"></span>
+                        &nbsp;
+                        <span id="temperature"></span>℃
+                        &nbsp;
+                        |
+                        &nbsp;
+                        <span id="weatherSta">
+                                小雨
+                        </span>
+                    </div>
+                </div>
+                <div class="quality flexRow">
+                    <div class="yellowLine">
+
+                    </div>
+                    <span id="quality">
+
+                    </span>
+                    <p>
+                            <span id="airNum">
+
+                            </span>
+                        <!--<img src="" alt="">-->
+                        🍃
+                    </p>
+                </div>
+            </div>
+            <ul class="dataScreening flex">
+                <li class="clear">
+                    <p class="lf p1">
+
+                    </p>
+                    <div class="lf">
+                        <p id="totalSupply">NaN</p>
+                        <p>总供水量/m³</p>
+                    </div>
+                </li>
+                <li class="clear pLeft">
+                    <p class="lf p3">
+
+                    </p>
+                    <div class="lf">
+                        <p id="minPressure">NaN</p>
+                        <p>总排水量/m³</p>
+                    </div>
+                </li>
+                <li class="clear">
+                    <p class="lf p2">
+
+                    </p>
+                    <div class="lf">
+                        <p id="totalPower">NaN</p>
+                        <p>总耗电量/KW.h</p>
+                    </div>
+                </li>
+                <li class="clear pLeft">
+                    <p class="lf p4">
+
+                    </p>
+                    <div class="lf">
+                        <p id="abnormityWarning">NaN</p>
+                        <p>异常报警</p>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+        <!--//第二部分水厂数据-->
+        <div class="main_2">
+            <div class="waterData">
+                    <div class="data-title">
+                        <div class="virgule lf">
+                            |
+                        </div>
+                        <div class="black">
+                            水厂数据
+                        </div>
+                    </div>
+                    <div class="data-body">
+                        <ul class="flex">
+                            <li class="grayGra">
+                                <div>
+                                 柯沙水厂
+                                </div>
+                                <ul>
+                                    <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                        <span>
+                                          无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                        <span>
+                                           无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                        <span>
+                                            无
+                                        </span>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="grayGra">
+                                <div>
+                                    乌沙水厂
+                                </div>
+                                <ul>
+                                    <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                        <span>
+                                          无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                        <span>
+                                           无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                        <span>
+                                            无
+                                        </span>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="grayGra">
+                                <div>
+                                    泥凼水厂
+                                </div>
+                                <ul>
+                                    <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                        <span>
+                                          无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                        <span>
+                                           无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                        <span>
+                                            无
+                                        </span>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="grayGra">
+                                <div>
+                                    威舍水厂
+                                </div>
+                                <ul>
+                                    <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                        <span>
+                                          无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                        <span>
+                                           无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                        <span>
+                                            无
+                                        </span>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="grayGra">
+                                <div>
+                                    清水河水厂
+                                </div>
+                                <ul>
+                                    <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                        <span>
+                                          无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                        <span>
+                                           无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                        <span>
+                                            无
+                                        </span>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="grayGra">
+                                <div>
+                                    月亮田水厂
+                                </div>
+                                <ul>
+                                    <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                        <span>
+                                          无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                        <span>
+                                           无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                        <span>
+                                            无
+                                        </span>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="grayGra">
+                                <div>
+                                   洒金水厂
+                                </div>
+                                <ul>
+                                    <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                        <span>
+                                          无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                        <span>
+                                           无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                        <span>
+                                            无
+                                        </span>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="grayGra">
+                                <div>
+                                    西郊水厂
+                                </div>
+                                <ul>
+                                    <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                        <span>
+                                          无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                        <span>
+                                           无
+                                        </span>
+                                    </li>
+                                    <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                        <span>
+                                            无
+                                        </span>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <br>
+            <div class="waterData">
+                <div class="data-title">
+                    <div class="virgule lf">
+                        |
+                    </div>
+                    <div class="black">
+                        污水处理厂数据
+                    </div>
+                </div>
+                <div class="data-body">
+                    <ul class="flex">
+                        <li class="grayGra">
+                            <div>
+                                万峰新区污水处理厂
+                            </div>
+                            <ul>
+                                <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                    <span>
+                                          无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                    <span>
+                                           无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                    <span>
+                                            无
+                                        </span>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="grayGra">
+                            <div>
+                                桔山污水处理厂
+                            </div>
+                            <ul>
+                                <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                    <span>
+                                          无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                    <span>
+                                           无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                    <span>
+                                            无
+                                        </span>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="grayGra">
+                            <div>
+                                马岭污水处理厂
+                            </div>
+                            <ul>
+                                <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                    <span>
+                                          无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                    <span>
+                                           无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                    <span>
+                                            无
+                                        </span>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="grayGra">
+                            <div>
+                                清水河污水处理厂
+                            </div>
+                            <ul>
+                                <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                    <span>
+                                          无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                    <span>
+                                           无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                    <span>
+                                            无
+                                        </span>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="grayGra">
+                            <div>
+                                下午屯污水处理厂
+                            </div>
+                            <ul>
+                                <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                    <span>
+                                          无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                    <span>
+                                           无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                    <span>
+                                            无
+                                        </span>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="grayGra">
+                            <div>
+                               威舍污水处理厂
+                            </div>
+                            <ul>
+                                <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                    <span>
+                                          无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                    <span>
+                                           无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                    <span>
+                                            无
+                                        </span>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="grayGra">
+                            <div>
+                                乌沙污水处理厂
+                            </div>
+                            <ul>
+                                <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                    <span>
+                                          无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                    <span>
+                                           无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                    <span>
+                                            无
+                                        </span>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="grayGra">
+                            <div>
+                                滴水污水处理厂
+                            </div>
+                            <ul>
+                                <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                    <span>
+                                          无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                    <span>
+                                           无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                    <span>
+                                            无
+                                        </span>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="grayGra">
+                            <div>
+                                泥凼污水处理厂
+                            </div>
+                            <ul>
+                                <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                    <span>
+                                          无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                    <span>
+                                           无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                    <span>
+                                            无
+                                        </span>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="grayGra">
+                            <div>
+                                泥溪坝污水处理厂
+                            </div>
+                            <ul>
+                                <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                    <span>
+                                          无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                    <span>
+                                           无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                    <span>
+                                            无
+                                        </span>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="waterData">
+                <div class="data-title">
+                    <div class="virgule lf">
+                        |
+                    </div>
+                    <div class="black">
+                        水库数据
+                    </div>
+                </div>
+                <div class="data-body">
+                    <ul class="flex">
+                        <li class="grayGra">
+                            <div>
+                                兴西湖水库
+                            </div>
+                            <ul>
+                                <li class="flex">
+                                        <span>
+                                            压力
+                                        </span>
+                                    <span>
+                                          无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            供水量
+                                        </span>
+                                    <span>
+                                           无
+                                        </span>
+                                </li>
+                                <li class="flex">
+                                        <span>
+                                            耗电量
+                                        </span>
+                                    <span>
+                                            无
+                                        </span>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <ul class="flex">
+            <li data-toggle="index.html" class="blue">
+                <p>
+                    <img src="images/zhuye2_42.png" alt="实时数据">
+                </p>
+                <div>
+                    实时数据
+                </div>
+            </li>
+            <li data-toggle="statForm.html">
+                <p>
+                    <img src="images/zhuye_44.png" alt="统计报表">
+                </p>
+                <div>
+                    统计报表
+                </div>
+            </li>
+            <li data-toggle="MeterRead.html">
+                <p>
+                    <img src="images/zhuye_46.png" alt="抄表数据">
+                </p>
+                <div>
+                    抄表数据
+                </div>
+            </li>
+            <li data-toggle="warning.html">
+                <p>
+                    <img src="images/zhuye_48.png" alt="异常报警">
+                </p>
+                <div>
+                    异常报警
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="pluginJS/jquery-1.11.3.js"></script>
+    <script src="pluginJS/layer/mobile/layer.js"></script>
+    <script src="pluginJS/json2.js"></script>
+    <script src="pluginJS/echarts.js"></script>
+    <script src="pluginJS/liquidFill.js"></script>
+    <script src="selfJS/index.js"></script>
+    <script src="selfJS/public.js"></script>
+</body>
+</html>

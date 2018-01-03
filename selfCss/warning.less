@@ -1,0 +1,239 @@
+#header{
+  margin:1em 0;
+}
+
+#main{
+  .main-warning{
+    margin-bottom: 1.8em;
+    .warning-sta{
+      margin:2em 0;
+      .warning-add{
+        width:50%;
+
+        >div{
+
+          >p{
+            margin-left: 3.6em;
+            margin-right: .5em;
+          }
+          div{
+            p{
+              font-size: .8em;
+              color: #939494;
+            }
+          }
+        }
+      }
+    }
+    .warning-search{
+
+        margin:0 auto;
+        width: 88%;
+
+        background: #171E31;
+        border-radius: 2.8em;
+        border: none;
+        outline: none;
+        color: #BDBBB6;
+        padding: .8em 1em;
+      #classify{
+        position: relative;
+        display: inline-block;
+        margin-left: .5em;
+        width:6em ;
+        color: #fff;
+        background: #171E31;
+        border:none;
+        font-size: 1em;
+        outline: none;
+
+        img{
+          width: .8em;
+          margin-left: .2em;
+        }
+
+        ul{
+          position: absolute;
+          top:100%;
+          left: 0;
+          background: #171E31;
+          li{
+            padding: .3em 1em;
+            border-bottom: 1px solid #fff;
+          }
+        }
+      }
+      #calendar{
+        img{
+          width: 1.3em;
+          vertical-align: middle;
+        }
+        input{
+
+          font-size: 1em;
+          width: 5em;
+          border: none;
+          outline: none;
+          background: #171E31;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .warning-list{
+    overflow: auto;
+    background: #fff;
+    padding-bottom: 4em;
+    min-height: 34em;
+    li{
+      padding: 1em;
+      border-bottom: 1px solid #E9E9E9;
+      >div{
+        width: 70%;
+        i{
+          margin-top: .3em;
+          display: inline-block;
+          height: 1em;
+          width: 1em;
+          border-radius: 50%;
+        }
+        div{
+          margin-left: 1.5em;
+          h2{
+            margin-bottom: .3em;
+            color: #000;
+            font-size: 1.2em;
+            font-weight: 500;
+          }
+          p{
+            font-size: .8em;
+            color: #9A9A9A;
+          }
+        }
+
+      }
+      >p{
+        line-height: 3.49em;
+        font-size: .9em;
+        color: #000;
+        img{
+          width: 1em;
+         vertical-align: sub;
+        }
+      }
+    }
+  }
+}
+
+
+.ibg-red{
+  background: #FF6C6C;
+}
+.ibg-gray{
+  background: #DEDEDE;
+}
+
+
+.pbg1{
+  width:2em;
+  height:2em;
+  background: url("../images/zhuye_22.png") no-repeat;
+  background-size: 100%;
+}
+.pbg2{
+  width:2em;
+  height:2em;
+  background: url("../images/warning_03.png") no-repeat;
+  background-size: 100%;
+}
+
+
+//模态框
+.modal{
+  display: none;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left: 0;
+  right:0;
+
+  background: rgba(0,0,0,.5);
+  .modal-main{
+    width: 80%;
+    background: #fff;
+    border-radius: 5px;
+    color: #000;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    .modal-title{
+      text-align: center;
+      padding: 1em;
+      h3{
+        color: #008FDE;
+      }
+      img{
+        width: 1em;
+        margin-top:.2em;
+      }
+    }
+    .modal-body-self{
+      border-top:1px solid #EAEAEA;
+      border-bottom:1px solid #EAEAEA;
+      padding-left: 1.5em;
+      ul{
+        li:last-child{
+          border:none;
+        }
+        li{
+          border-bottom: 1px solid #EAEAEA;
+          padding: .6em;
+          font-size: 1em;
+          span{
+              color: #666;
+          }
+          p{
+              color: #000;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .modal-button{
+      padding: 1em 3em;
+      button{
+          width: 100%;
+        background: #fff;
+        color: #FF8000;
+        font-weight: 500;
+        font-size: 1.2em;
+        padding: .3em;
+        border: 1px solid #ff8000;
+        border-radius: 2em;
+        outline: none;
+      }
+    }
+  }
+}
+
+
+
+//媒体查询{苹果6
+
+@media screen and (max-width: 375px){
+
+  body{
+    font-size: 13px;
+  }
+
+}
+//媒体查询{苹果5
+
+@media screen and (max-width: 320px){
+
+  body{
+    font-size: 10px;
+  }
+
+}

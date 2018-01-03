@@ -1,0 +1,163 @@
+*{margin: 0;padding: 0;}
+body,#parent{
+  overflow: hidden;
+}
+#container {
+
+  height: 750px;
+  width: 800px;
+
+}
+#output {
+  width: 100%;
+  height: 100%;
+}
+.color{
+  width: 120px;
+  height: 20px;
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  margin-left: -60px;
+  bottom: 20px;
+}
+.color li{
+  float: left;
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  box-shadow: 0 0 4px #FFF;
+  list-style: none;
+  cursor: pointer;
+}
+.color li:nth-child(1){
+  background: #002c4a;
+}
+.color li:nth-child(2){
+  background: #35ac03;
+}
+.color li:nth-child(3){
+  background: #ac0908;
+}
+.color li:nth-child(4){
+  background: #18bbff;
+}
+#zzc{
+  color:#fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right:0;
+  z-index: 666666;
+  background: rgba(0,0,0,.6);
+  #logo{
+    margin:5em 0;
+    margin-bottom: 3em;
+    .logo{
+      p:last-child{
+
+       margin-top:1em;
+        font-weight: 100;
+      }
+      img{
+        width:7em;
+        height:7em;
+
+      }
+    }
+
+  }
+  #regiset{
+    padding: 0 1.5em;
+    div{
+      padding: 1em;
+      span{
+        font-size: 1.3em;
+        color: #aaa;
+      }
+      input{
+        background:transparent!important;
+        border: none;
+        outline: none;
+        font-size: 1.2em;
+        color: #fff;
+      }
+
+      button{
+        width:100%;
+        padding: .3em 0;
+        border-radius: 2em;
+        outline: none;
+        font-size: 1.5em;
+        font-weight:500;
+        background: #fff;
+      }
+    }
+
+    >p{
+      padding-right: 1em;
+      a{
+        color: #1AAAE2;
+      }
+    }
+  }
+}
+
+.borderBottom{
+  border-bottom: 2px solid #5A6579;
+}
+
+
+
+
+//媒体查询{苹果6
+
+@media screen and (max-width: 375px){
+
+  body{
+    font-size: 13px;
+  }
+
+}
+//媒体查询{苹果5
+
+@media screen and (max-width: 320px){
+
+  body{
+    font-size: 10px;
+  }
+
+}
+
+
+
+
+
+//iframe的高度
+iframe{
+  width:100%;
+  height:736px;
+}
+
+
+
+//媒体查询{苹果6
+
+@media screen and (max-width: 375px){
+
+  body{
+    font-size: 13px;
+  }
+
+}
+//媒体查询{苹果5
+
+@media screen and (max-width: 320px){
+
+  body{
+    font-size: 10px;
+  }
+
+}

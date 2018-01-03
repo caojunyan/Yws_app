@@ -1,0 +1,166 @@
+
+#zzc {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 666666;
+  background: rgba(36,44,66,.7);
+
+  #header{
+    margin:1em 0;
+    padding: 0 2em 0 1em;
+    img{
+      width:.8em;
+    }
+  }
+  #readData{
+    position: relative;
+    margin:4em 0;
+    #singleCopy{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-25%);
+      z-index: 10;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .blueCircle{
+      position: absolute;
+      left: 50%;
+      top:-.5em;
+      transform: translateX(-50%);
+
+      .bluePointer{
+        transform-origin:left center;
+
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform:rotate(180deg);
+        div{
+          width:3em;
+          height:4px;
+          border-radius: 3px;
+          background: #0D82B4;
+        }
+        .rotateHalf{
+          transform-origin:left center;
+          animation:scroll 2s infinite linear;
+          animation-fill-mode:forwards;
+        }
+      }
+
+      img{
+        width: 10em;
+        animation:gogogo 5s infinite linear ;;
+      }
+    }
+    h3{
+      font-size: 1.1em;
+      margin-top:1em;
+    }
+
+    .cPanel{
+      width: 9em;
+      height:9em;
+    }
+  }
+
+  .userNum{
+
+    padding: 0 4em;
+    .userNump{
+      width: 100%;
+      background: #171E31;
+      padding: .5em;
+      border-radius: 2em;
+      font-size: 1em;
+
+
+      #userNum{
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: #fff;
+      }
+    }
+
+    button{
+      margin-top:1em;
+      width: 100%;
+      background: #00BBFE;
+      font-size: 1.3em;
+      color: #fff;
+      border-radius: 2em;
+      padding: .3em;
+      border: none;
+      outline: none;
+      font-weight: 500;
+    }
+  }
+}
+
+
+
+
+
+
+
+@keyframes gogogo {
+  0%{
+
+    transform: rotate(0deg);
+
+  }
+  50%{
+   transform: rotate(180deg);
+
+  }
+  100%{
+    transform: rotate(360deg);
+
+  }
+}
+
+@keyframes scroll{
+  0%{
+
+    transform:rotate(30deg);
+  }
+
+  50%{
+
+    transform:rotate(150deg);
+  }
+  100%{
+
+    transform:rotate(30deg);
+  }
+}
+
+
+
+//媒体查询{苹果6
+
+@media screen and (max-width: 375px){
+
+  body{
+    font-size: 13px;
+  }
+
+}
+//媒体查询{苹果5
+
+@media screen and (max-width: 320px){
+
+  body{
+    font-size: 10px;
+  }
+
+}

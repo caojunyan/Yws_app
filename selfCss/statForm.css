@@ -1,0 +1,140 @@
+#header {
+  margin: 1em 0;
+}
+#main {
+  margin-bottom: 5.5em;
+}
+#main .main-title {
+  padding: 1em .6em;
+  background: #22344D;
+}
+#main .main-title .prev-day {
+  margin-top: .2em;
+  font-size: .8em;
+}
+#main .main-title .prev-day p {
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-right-color: #fff;
+}
+#main .main-title .prev-day span {
+  margin-left: 1.5em;
+}
+#main .main-title .next-day {
+  margin-top: .2em;
+  font-size: .8em;
+}
+#main .main-title .next-day p {
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-left-color: #fff;
+}
+#main .main-title .next-day span {
+  margin-right: .36em;
+}
+#main .main-title .next-readonly {
+  margin-top: .2em;
+  color: #808082;
+}
+#main .main-title .next-readonly p {
+  border-left-color: #808082;
+}
+#main .main-title .prev-readonly {
+  margin-top: .2em;
+  color: #808082;
+}
+#main .main-title .prev-readonly p {
+  border-left-color: #808082;
+}
+#main .main-title .calendar #timeDate {
+  width: 5.5em!important;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1em;
+}
+#main .main-title .calendar img:first-child {
+  margin-bottom: -0.2em;
+}
+#main .main-title .calendar span {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+#main .main-title .calendar b {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+#main .main-body {
+  padding: 0 2.5em;
+}
+#main .main-body p {
+  margin: 1em 0;
+}
+#main .main-body ul li {
+  margin-bottom: 1em;
+  background: #192032;
+  height: 2em;
+  line-height: 2em;
+  border-radius: 2em;
+  overflow: hidden;
+}
+#main .main-body ul li span:first-child {
+  margin-left: 1em;
+}
+#main .main-body ul li span.rf {
+  margin-right: 1em;
+}
+#main .main-body ul li div {
+  width: 80%;
+  height: 100%;
+  transition: width .6s linear;
+}
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.produceGra {
+  background: #37cbec;
+  background: -webkit-gradient(linear, 0 0, right bottom, from(#04A8EB), to(#4ad8ec));
+}
+.sewageGra {
+  background: #6369f9;
+  background: -webkit-gradient(linear, 0 0, right bottom, from(#B346FF), to(#4478f8));
+}
+.consumptionGra {
+  background: #3b7fd6;
+  background: -webkit-gradient(linear, 0 0, right bottom, from(#2D5EC4), to(#53b7f6));
+}
+.pressureGra {
+  background: #83e592;
+  background: -webkit-gradient(linear, 0 0, right bottom, from(#48BD5C), to(#83e592));
+}
+.copyGra {
+  background: #fa9a0f;
+  background: -webkit-gradient(linear, 0 0, right bottom, from(#FA9A0F), to(#efca00));
+}
+.useWaterGra {
+  background: #ff807d;
+  background: -webkit-gradient(linear, 0 0, right bottom, from(#F34878), to(#ff807d));
+}
+.medicineGra {
+  background: #b067ff;
+  background: -webkit-gradient(linear, 0 0, right bottom, from(#2BA7C8), to(#b067ff));
+}
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}

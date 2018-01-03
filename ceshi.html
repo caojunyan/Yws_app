@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="pluginJS/echarts.js"></script>
+    <script src="pluginJS/liquidFill.js"></script>
+</head>
+<body>
+<div style="width:60%;height:300px">
+    <div style="width:100%;height:300px" id="ceshi"></div>
+</div>
+
+<script>
+
+
+        var Qing_1 = echarts.init(document.getElementById("ceshi"));
+        var option_qing = {
+            series: [{
+                type: 'liquidFill',
+                color:['#077CE0'],
+                data: [0.6],
+                radius: '150%',
+                outline: {
+                    show: false
+                },
+                backgroundStyle: {
+                    borderColor: 'black',
+                    borderWidth: 3,
+                    shadowColor: 'rgba(0, 0, 0, 0.4)',
+                    shadowBlur: 20,
+                    color:"white"
+                },
+//                grid:{
+//                    top: 0,
+//                    left:0,
+//                    bottom:0,
+//                    right:0
+//                },
+                shape:'path://M0 0 L0 1000 L800 1000 L800 0 Z',
+                label: {
+                    normal: {
+                        position: ['25%', '40%'],
+                        formatter: function() {
+                            return '1#清水池(m)\n\n\n  液位：123';
+                        },
+                        textStyle: {
+                            fontSize: 14,
+                            color: 'black'
+                        }
+                    }
+                }
+            }]
+        };
+        Qing_1.clear();
+        Qing_1.setOption(option_qing,true);
+
+ window.addEventListener("resize",function () {
+
+     Qing_1.resize();
+ })
+
+
+
+
+
+</script>
+</body>
+</html>

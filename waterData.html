@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Title</title>
+    <link rel="stylesheet" href="selfCss/cssReset.css">
+    <link rel="stylesheet" href="pluginCss/slide.css">
+    <link rel="stylesheet" href="selfCss/waterData.css">
+</head>
+<body>
+<!--标题-->
+<div id="header">
+    <img src="images/back.png" alt="返回" class="lf">
+    <h3 class="text-center">
+        洒金水厂实时数据
+    </h3>
+</div>
+<!--主体-->
+<div id="main">
+    <div class="main-title flex">
+        <div class="title-left">
+                <div class="imgParent">
+
+                        <img src="images/lanquan.png" alt="">
+
+
+                </div>
+                <div id="waterBall"></div>
+                <p>
+                    瞬时流量/m³
+                </p>
+        </div>
+        <div class="title-right">
+            <div>
+                <p>
+                    <img src="images/zhuye_15.png" alt="" class="lf">
+                </p>
+                <div>
+                    <p>今日累计流量/ <span></span></p>
+                    <h3 id="waterDelivery">23444</h3>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <img src="images/zhuye_17.png" alt="" class="lf">
+                </p>
+                <div>
+                    <p>今日耗电量/<span></span></p>
+                    <h3 id="powerConsumption">23444</h3>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <a href="warning.html">
+                        <img src="images/zhuye_22.png" alt="" class="lf">
+                    </a>
+
+                </p>
+                <div>
+                    <p>今日报警</p>
+                    <h3 id="warningNum">23444</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="body-title">
+            <i></i>
+            <span>
+                压力
+            </span>
+        </div>
+        <div class="body-content flex borderBottom">
+            <div>
+                    <img src="images/shuju_03.png" alt="">
+                    <span>进水压力</span>
+                </div>
+            <div>
+                <span id="pressureVal">请稍后···</span>
+                <span class="danWei">
+
+                </span>
+
+            </div>
+        </div>
+        <div class="body-content flex">
+            <div>
+                <img src="images/shuju_03.png" alt="">
+                <span>出水压力</span>
+            </div>
+            <div>
+                <span id="outflowPressureVal">NaN</span>
+                <span class="danWei">
+
+                </span>
+
+            </div>
+        </div>
+
+
+        <div class="body-title">
+            <i></i>
+            <span>
+              液位
+            </span>
+        </div>
+        <div class="body-content flex">
+            <div>
+                <img src="images/shuju_08.png" alt="">
+                <span>水池液位</span>
+            </div>
+            <div>
+                <span id="liquidLevel">请稍后···</span>
+                <span class="danWei">
+
+                </span>
+
+            </div>
+        </div>
+
+
+
+        <div class="body-title">
+            <i></i>
+            <span>
+                水质
+            </span>
+        </div>
+        <div class="body-content flex borderBottom">
+            <div>
+                <img src="images/shuju_12.png" alt="">
+                <span>进水余氯</span>
+            </div>
+            <div>
+                <span id="inflowChlorine">NaN</span>
+                <span class="danWei">
+
+                </span>
+
+            </div>
+        </div>
+        <div class="body-content flex borderBottom">
+            <div>
+                <img src="images/shuju_12.png" alt="">
+                <span>出水余氯</span>
+            </div>
+            <div>
+                <span id="outflowChlorine">NaN</span>
+                <span class="danWei">
+
+                </span>
+
+            </div>
+        </div>
+        <div class="body-content flex borderBottom">
+            <div>
+                <img src="images/shuju_14.png" alt="">
+                <span>进水浊度</span>
+            </div>
+            <div>
+                <span id="inflowTurbid">NaN</span>
+                <span class="danWei">
+
+                </span>
+
+            </div>
+        </div>
+        <div class="body-content flex">
+            <div>
+                <img src="images/shuju_14.png" alt="">
+                <span>出水浊度</span>
+            </div>
+            <div>
+                <span id="outflowTurbid">NaN</span>
+                <span class="danWei">
+
+                </span>
+
+            </div>
+        </div>
+
+        <!--<div class="body-title">-->
+            <!--<i></i>-->
+            <!--<span>-->
+                <!--水厂数据-->
+            <!--</span>-->
+        <!--</div>-->
+        <!--//药耗-->
+        <!--<div class="body-content flex">-->
+            <!--<div>-->
+                <!--<img src="images/shuju_16.png" alt="">-->
+                <!--<span>药耗</span>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<span id="medicineConsumption">24</span>-->
+                <!--<span class="danWei">-->
+
+                <!--</span>-->
+
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="body-title">-->
+            <!--<i></i>-->
+            <!--<span>-->
+                <!--变频器-->
+            <!--</span>-->
+        <!--</div>-->
+        <!--<div class="body-content flex">-->
+            <!--<div>-->
+                <!--<img src="images/shuju_10.png" alt="">-->
+                <!--<span>变频器频率采集</span>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<span id="transducer">22</span>-->
+                <!--<span class="danWei">-->
+
+                <!--</span>-->
+
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="body-title">-->
+            <!--<i></i>-->
+            <!--<span>-->
+                <!--调节阀-->
+            <!--</span>-->
+        <!--</div>-->
+        <!--<div class="body-content flex">-->
+            <!--<div>-->
+                <!--<img src="images/shuju_06.png" alt="">-->
+                <!--<span>进水调节阀</span>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<span id="ctrlValveVal">22</span>-->
+                <!--<span class="danWei">-->
+                   <!--%-->
+                <!--</span>-->
+
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div class="foot-button">
+        <button>
+            确 认
+        </button>
+    </div>
+
+</div>
+
+
+<!--//模态框-->
+<div class="modal">
+    <div class="modal-main">
+        <div class="modal-title">
+            <img src="images/quxian_03.png" alt="" class="rf" id="close">
+            <h3 id="modal-title">
+                进水压力
+            </h3>
+
+        </div>
+        <div class="modal-carousel">
+            <div class="main_visual">
+                <!--<div class="flicking_con" id="flicking_con">-->
+                    <!--<a href="#">1</a>-->
+                    <!--<a href="#">2</a>-->
+                    <!--<a href="#">3</a>-->
+                    <!--<a href="#">4</a>-->
+                    <!--<a href="#">5</a>-->
+                    <!--<a href="#">6</a>-->
+                    <!--<a href="#">7</a>-->
+                <!--</div>-->
+                <div class="main_image">
+                    <ul>
+                        <li class="text-center" id="polyLine1" style="width:300px;height:267px;"><span>暂无数据</span></li>
+                        <!--<li id="polyLine2"><span></span></li>-->
+                        <!--<li id="polyLine3"><span></span></li>-->
+                        <!--<li id="polyLine4"><span></span></li>-->
+                        <!--<li id="polyLine5"><span></span></li>-->
+                        <!--<li id="polyLine6"><span></span></li>-->
+                        <!--<li id="polyLine7"><span></span></li>-->
+                    </ul>
+                    <a href="javascript:;" id="btn_prev"></a>
+                    <a href="javascript:;" id="btn_next"></a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <ul class="flex">
+                <li>
+                    <p>当前值</p>
+                    <span id="currentVal">
+                              无数据
+                    </span>
+                    <a class="_unit">
+
+                    </a>
+                </li>
+                <li>
+                    <p>平均值</p>
+                    <span id="meanVal">
+                              无数据
+                    </span>
+                    <a class="_unit">
+
+                    </a>
+                </li>
+            </ul>
+            <div class="border-gra"></div>
+            <ul class="flex">
+                <li>
+                    <p>今日最高</p>
+                    <span id="maxVal">
+                              无数据
+                          </span>
+                    <a class="_unit">
+
+                    </a>
+                </li>
+                <li>
+                    <p>今日最低</p>
+                    <span id="minVal">
+                              无数据
+                          </span>
+                    <a class="_unit">
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="pluginJS/jquery-1.11.3.js"></script>
+<script src="pluginJS/layer/layer.js"></script>
+<script src="pluginJS/jquery.event.drag-1.5.min.js"></script>
+<script src="pluginJS/jquery.touchSlider.js"></script>
+<script src="pluginJS/echarts.js"></script>
+<script src="pluginJS/liquidFill.js"></script>
+<script src="selfJS/waterData.js"></script>
+<script src="selfJS/public.js"></script>
+</body>
+</html>

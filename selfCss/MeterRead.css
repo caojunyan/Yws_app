@@ -1,0 +1,129 @@
+#header {
+  margin: 1em 0;
+  padding: 0 2em 0 1em;
+}
+#header div {
+  margin-top: -0.3em;
+  font-size: .8em;
+  text-align: center;
+}
+#header div a {
+  color: #fff;
+}
+#header div img {
+  width: 1.6em;
+}
+#header h3 {
+  margin-left: 1.9em;
+}
+#main {
+  margin-bottom: 4em;
+}
+#main .calendar {
+  padding: .2em;
+  background: #171E31;
+  border-radius: 2em;
+  margin: 1.8em auto 0;
+  width: 80%;
+  line-height: 2em;
+}
+#main .calendar #classify {
+  position: relative;
+  width: 8em;
+  margin: 0 auto;
+  color: #fff;
+  background: #171E31;
+  border: none;
+  font-size: 1em;
+  outline: none;
+}
+#main .calendar #classify img {
+  width: .8em;
+  margin-left: .2em;
+}
+#main .calendar #classify ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #171E31;
+}
+#main .calendar #classify ul li {
+  padding: .3em 1em;
+  border-bottom: 1px solid #fff;
+}
+#main .calendar #classify ul li:last-child {
+  border: none;
+}
+#main .light_ring .ring-right {
+  padding: 3.3em 0;
+  width: 50%;
+}
+#main .light_ring .ring-right p span {
+  color: #24C5FF;
+}
+#main .daily {
+  position: relative;
+}
+#main .daily .daily-title {
+  padding: .5em .5em .5em 1.3em;
+  background: #2B364D;
+}
+#main .daily .daily-title .overProof {
+  width: 2.8em;
+  margin-right: 1em;
+}
+#main .daily .daily-title .overProof p {
+  margin-top: .18em;
+  width: .8em;
+  height: .8em;
+  background: #EF5383;
+  border-radius: 3px;
+}
+#main .daily .daily-title .normal {
+  width: 2.8em;
+  margin-right: 1em;
+}
+#main .daily .daily-title .normal p {
+  margin-top: .18em;
+  width: .8em;
+  height: .8em;
+  background: #24B3FF;
+  border-radius: 3px;
+}
+#main .daily .daily-title span {
+  font-size: .8em;
+}
+#main .month {
+  position: relative;
+}
+#main .month .month-title {
+  padding: .5em .5em .5em 1.3em;
+  background: #2B364D;
+}
+.meanLine {
+  padding: 0 1em;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 666;
+}
+.meanLine p {
+  width: 36%;
+  border-bottom: 1px dashed #fff;
+}
+.meanLine div {
+  margin-bottom: -0.5em;
+  font-size: 1em;
+  font-weight: 300;
+}
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}

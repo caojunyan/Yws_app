@@ -1,0 +1,157 @@
+ #header{
+   margin:1em 0;
+ }
+#main{
+  position: relative;
+
+  .main_1{
+    position: absolute;
+    top:0;
+    left: 0;
+
+    .welcome{
+      padding:0 2em;
+      margin-top:3em;
+      .quality{
+        width:4em;
+        height:4em;
+        border-radius: 3px;
+        background: #1E2538;
+        padding: 5px;
+        .yellowLine{
+
+          border-bottom: 2px solid #FFAD00;
+        }
+      }
+      img{
+        width: 1.5em;
+        vertical-align: middle;
+      }
+    }
+    .dataScreening{
+
+      margin-top:9.6em;
+      padding:0 2.6em 1em;
+      .pLeft{
+        padding-left: 1em;
+      }
+      li{
+        width:50%;
+        margin-bottom: 1.6em;
+        >p{
+          width:2em;
+          height:2em;
+            margin-top:.3em;
+            img{
+              width: 100%;
+            }
+        }
+        >div{
+          padding-left: .3em;
+        }
+
+        div>p:first-child{
+            margin-bottom: .1em;
+          font-size: 1.4em;
+        }
+      div>p:last-child{
+        color:#566F8C;
+      }
+      }
+    }
+  }
+  .main_2{
+    background: #fff;
+    padding: .6em;
+    border-top: 3px solid #8787FB;
+    .waterData{
+      .data-title {
+        .virgule{
+          margin-right:.8em;
+          height:100%;
+          width:4px;
+          border-radius: 6px;
+          background: #00BDFD;
+        }
+      }
+      .data-body{
+        >ul{
+          >li{
+            width:32%;
+            border-radius: 5px;
+            padding:.8em;
+            margin-top:.6em;
+            >div{
+              padding:.3em 0 .3em .4em;
+              border-bottom: 2px dashed #fff;
+            }
+            ul{
+              padding:.2em  0;
+              font-size: .8em;
+              li{
+                  margin-top: .3em;
+              }
+            }
+          }
+        }
+      }
+    }
+    .waterData:last-child{
+      margin-bottom: 4em;
+    }
+  }
+}
+
+
+
+//四个背景图
+.p1{
+  background: url("../images/zhuye_15.png") no-repeat;
+  background-size: 100%;
+}
+.p2{
+  background: url("../images/zhuye_17.png") no-repeat;
+  background-size: 100%;
+}
+.p3{
+  background: url("../images/pai_03.png") no-repeat;
+  background-size: 100%;
+}
+.p4{
+  background: url("../images/zhuye_22.png") no-repeat;
+  background-size: 100%;
+}
+
+
+//三种渐变背景
+.blueGra{
+  background: rgb(0,152,210);
+  background:-webkit-gradient(linear, 0 0, right bottom, from(#06C3F3), to(rgb(0,152,210)));
+}
+.redGra{
+  background: rgb(214,66,66);
+  background:-webkit-gradient(linear, 0 0, right bottom, from(#FF9492), to(rgb(214,66,66)));
+}
+.grayGra{
+  background:#D7D7D7;
+  background:-webkit-gradient(linear, 0 0, right bottom, from(#ccc), to(rgb(188,188,188)));
+}
+
+//媒体查询{苹果6
+
+@media screen and (max-width: 375px){
+
+  body{
+    font-size: 13px;
+  }
+
+}
+//媒体查询{苹果5
+
+@media screen and (max-width: 320px){
+
+  body{
+    font-size: 10px;
+  }
+
+}
